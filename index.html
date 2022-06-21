@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hamming Code Simulator</title>
+        <link  rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    </head>
+
+    <body>    
+
+        <div class="custom_div">
+
+            <div id="top">                
+                <h1>HAMMING CODE SIMULATOR</h1><br>
+            </div>
+
+            <div id="left">
+                <h2>Data Input</h2>
+                <p>Click the "Compute Hamming Code" button to compute <br>the Hamming code.</p><br>
+
+                <form>
+                    <input type="radio" name="bits" value="bits_4" style="cursor: pointer" onclick="checkBitNumber(this.value);"> 4 Bit &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="bits" value="bits_8" style="cursor: pointer" onclick="checkBitNumber(this.value);"> 8 Bit &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="bits" value="bits_16" style="cursor: pointer" onclick="checkBitNumber(this.value);"> 16 Bit
+                </form><br>
+                                
+                <form>
+                    <input type="text" id="inputDataTextbox" placeholder=" Enter the input data to be encoded" maxlength="16"> 
+                    <input type=button id="computeCodeButton" name="computeCodeButton" value="Compute Hamming Code" onclick="computeHammingCode()">
+                </form><br>
+                
+                <h2>Simulate Error</h2>
+                <p>To simulate an error, modify the recieved code word and click <br>the "Compute Error Syndrome" button.</p>
+
+                <form>
+                    <input type="text" id="inputErrorTextbox" value="" placeholder=" Enter the hamming code to be modify"> 
+                    <input type=button name="computeErrorButton" value="Compute Error Syndrome" onclick="computeErrorCode()">
+                </form>
+                
+                <p>
+                    <br><input type=button value="RESET" onClick="window.location.reload()" style="padding: 8px 15px; margin: auto" type="button" class="btn btn--primary btn--inside uppercase">
+                </p>
+
+            </div>
+            
+
+            <div id="right">
+                 <p id="a_p" style = "letter-spacing:5px;"></p>
+                 <p id="b_p" ></p>
+                 <p id="c_p" style = "letter-spacing:5px;"></p><br>
+                 <p id="d_p" style = "letter-spacing:5px;"></p>
+                 <p id="e_p"style="text-align: center; text-shadow:none"></p>
+            </div>
+        </div>
+
+    </body>
+</html>
