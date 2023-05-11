@@ -3,7 +3,7 @@
 Hamming Code Simulator projesinde kullanıcıdan alınan data bitlerin, parity bit sayısı ve hamming kodu hesaplanmaktadır. Daha sonra hesaplanan hamming kodun rastgele bir biti kullanıcı tarafından değiştirilip hata bitinin kaçıncı bit olduğu bulunmaktadır. Bu projede HTML, CSS, Javascript kullanılmıştır.
 
 
-#### Demo Link: http://hammingcode.rf.gd/
+#### Demo Link: http://hammingcode.eu5.org
 
 
 ## Site İçeriği:
